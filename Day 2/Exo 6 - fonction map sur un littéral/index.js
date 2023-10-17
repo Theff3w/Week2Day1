@@ -8,9 +8,9 @@ const phones = [
 const TVA = 0.20;
 
 const pricesTTC = phones.map(phone => ({
-  name: phone.name,
-  priceHT: phone.priceHT,
-  priceTTC: phone.priceHT * (1 + TVA) 
+    name: phone.name,
+    priceHT: phone.priceHT,
+    priceTTC: phone.priceHT * (1 + TVA) 
 }));
 
 console.log(pricesTTC);
