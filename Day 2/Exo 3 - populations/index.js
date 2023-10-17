@@ -15,7 +15,7 @@ const populations = [
 ];
 
 for(const person of populations) {
-    const name = person.name;
+    const name = person.name.toLowerCase();
     const aCount = name.split('a').length -1;
     const lCount = name.split('l').length -1;
     person.count = aCount + lCount;
