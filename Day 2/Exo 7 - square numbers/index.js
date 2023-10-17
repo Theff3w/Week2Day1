@@ -15,7 +15,17 @@ for (const position of positions) {
     distances.push(distance);
 }
 
-// Le plus éloigné ?
+// let maxDistanceIndex = 0;
+// let maxDistance = distances[0];
+
+// for (let i = 1; i < distances.length; i++) {
+//     if (distances[i] > maxDistance) {
+//         maxDistance = distances[i];
+//         maxDistanceIndex = i;
+//     }
+// }
+
+// Le plus éloigné en une ligne ?
 const maxDistanceIndex = distances.indexOf(Math.max(...distances));
 
 console.log("Distances:", distances);
