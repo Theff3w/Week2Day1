@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', function(){
     const circleDiv = document.createElement("div");
-    // Update : ajout des props visuelles via CSS
+    // props modifiables pour créer des balles différentes à l'avenir :
+    circleDiv.style.width = "30px";
+    circleDiv.style.height = "30px";
+    circleDiv.style.backgroundColor = "red";
+    circleDiv.style.left = "50%";
+    circleDiv.style.top = "50%";
+    // ajout de certaines props visuelles via CSS partagées entre 
+    // toutes les balles
     circleDiv.className = "circle";
 
     // Ajout de ma div au body
     document.body.appendChild(circleDiv);
 
-    // Variables pour le mouvement :
+    // Variables pour gérer le mouvement :
     let positionX = 50;
     let speedX = 1;
     let positionY = 50;
@@ -30,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function(){
     // Bouger le cercle 60 fois par seconde (pour un mouvement fluide) :
     let interval = setInterval(moveCircle, 1000 / 60); 
 })
-
-
 
 /* 
 * Si on voulait pouvoir créer plusieurs balles pour la suite de l'exo
