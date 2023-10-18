@@ -2,6 +2,12 @@
 .circle {
     position: absolute;
     border-radius: 50%;
-    margin-left: -15px;
-    margin-top: -15px; 
+    margin-left: -35px;
+    margin-top: -35px; 
+}
+body {
+    background-image: url(./assets/images.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
