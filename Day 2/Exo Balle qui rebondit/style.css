@@ -1,0 +1,12 @@
+/* CSS */
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px; /* Ceci centre le cercle */
+}

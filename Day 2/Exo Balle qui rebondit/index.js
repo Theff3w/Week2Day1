@@ -1,16 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(){
     const circleDiv = document.createElement("div");
-    // Props de mon cercle
-    circleDiv.style.width = "30px";
-    circleDiv.style.height = "30px";
-    circleDiv.style.borderRadius = "50%";
-    circleDiv.style.backgroundColor = "red";
-    circleDiv.style.position = "absolute";
-    circleDiv.style.left = "50%";
-    circleDiv.style.top = "50%";
-    // Retrait des marges automatiques :
-    circleDiv.style.marginLeft = "-15px"; 
-    circleDiv.style.marginTop = "-15px"; 
+    // Update : ajout des props visuelles via CSS
+    circleDiv.className = "circle";
+
     // Ajout de ma div au body
     document.body.appendChild(circleDiv);
 
@@ -43,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 /* 
 * Si on voulait pouvoir créer plusieurs balles pour la suite de l'exo
-* On peut simplement add let currentId = 0 au début du DomCOntentLoaded;
+* On peut simplement add let currentId = 0 au début du DomContentLoaded;
 * puis créer une function qui englobe le reste "CreerCercle"
 * et commencer cette function par incrémenter currentId++;
 * puis après avoir créer notre const circleDiv
